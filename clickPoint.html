@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="500" height="300" style="border: solid 1px black;" 
+    id="canvas" onclick="printPoint(event)">
+    </canvas>
+</body>
+<script>
+    let canvas=document.getElementById("canvas");
+    let context=canvas.getContext("2d");
+    function printPoint(e){
+        let x=e.clientX;
+        let y=e.clientY;
+        context.beginPath();
+        context.arc(x,y,10,0,Math.PI*2);
+        context.fillStyle="black";
+        context.fill();
+    }
+</script>
+</html>

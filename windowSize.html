@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윈도우 사이즈</title>
+    <script>
+        function checkSize(){
+            let check = document.getElementById("check");
+            let print = document.getElementById("print");
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            print.innerHTML="width: "+width +", height: "+height;
+        }
+    </script>
+</head>
+<body>
+    버튼을 눌러 현재 브라우저 창의 크기를 확인하세요
+    <br><br>
+    <input type="button" value="창 크기 확인" id="check" onclick="checkSize()">
+    <h4>창 크기: <a id="print">(아직 확인하지 않음)</a></h4>
+</body>
+</html>

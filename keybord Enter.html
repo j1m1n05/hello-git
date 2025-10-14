@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키보드 입력 이벤트</title>
+    <script>
+        function checkKey(e){
+            if(e.key==="Enter"){
+                let formula=document.getElementById("formula").value;
+                let answer=document.getElementById("answer");
+                let result=eval(formula);
+                answer.value=result;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>계산기 만들기</h2>
+    <hr>
+    <p>수식을 입력하고 &lt;Enter&gt;를 입력하세요</p>
+    식<input type="text" id="formula" onkeydown="checkKey(event)"><br>
+    값<input type="text" id="answer">
+</body>
+</html>

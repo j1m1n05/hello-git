@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <script>
+        function SayHello(){
+            let target;
+            let input;
+            input = document.getElementById("input").value;
+            target = document.getElementById("point");
+            target.innerHTML = "안녕하세요." + input + "님";
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <textarea placeholder="김성동" rows="1px"cols="20" id="input"></textarea>
+        <button onclick="SayHello();">확인</button>
+        <hr>
+        <p id="point"></p>
+    </main>
+</body>
+</html>

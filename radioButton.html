@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼 , 사진</title>
+</head>
+<body>
+    <h2>라디오 버튼 클리하면 이미지를 출력합니다</h2>
+    <input name="friut" type="radio" value="banana.png" onchange="showImage();">바나나
+    <input name="friut" type="radio" value="mango.png" onchange="showImage();">망고
+    <input name="friut" type="radio" value="apple.png" onchange="showImage();">사과
+    <br>
+    <img id="img" src="" alt="빈 칸">
+</body>
+<script>
+    function showImage(){
+        let friuts=document.getElementsByClassName("friut");
+        for(let i=0;i<friuts.length;i++){
+            if(friuts[i].checked){
+                found=fruits[i];
+                break;
+            }
+        }
+        if(found){
+            let img = document.getElementById("img");
+            img.src=found.value;
+        }
+    }
+    
+</script>
+</html>

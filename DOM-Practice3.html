@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라면</title>
+    <script>
+        function order(){
+            let message = prompt("라면 끓이는 순서 입력");
+            let list = document.getElementById("list");
+            let li= document.createElement("li");
+            li.innerHTML = message;
+            list.appendChild(li);
+        }
+    </script>
+</head>
+<body>
+    <h3>라면 끓이는 순서</h3><hr>
+    <ol type="A" style="background-color: yellowgreen;" onclick="order();" id="list">
+        <li>물을 끓인다</li>
+    </ol>
+</body>
+</html>

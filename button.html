@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 클린 이벤트</title>
+    
+</head>
+<body>
+    <input type="button" id="b" value="버튼">
+    <br>
+    <hr id="line">
+</body>
+    <script>
+        let b = document.getElementById("b");
+        b.addEventListener("click",print);
+
+        function print(){
+            let target=document.getElementById("line");
+            let text=document.createElement("p");
+            text.innerHTML = "버튼이 눌렸습니다";
+            target.appendChild(text);
+        }
+    </script>
+</html>

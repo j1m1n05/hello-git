@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머 테스트</title>
+    <script>
+        let second=0;
+        let timer;
+        function go(){
+            
+            second++;
+            let out=document.getElementById("second");
+            out.innerHTML=second;
+        }
+        function timetStart(){
+            timer=setInterval("go()",1000);
+        }
+        function timerStop(){
+            clearInterval(timer);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="시작" id="start" onclick="timetStart()">
+    <input type="button" value="정지" id="stop" onclick="timerStop()">
+    <h4>시간: <a id="second">0</a>초</h4>
+</body>
+</html>

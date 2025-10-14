@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2471055 정지민 과제</title>
+</head>
+<style>
+    td{
+        border: 1px solid rgb(189, 189, 189);
+        padding: 1px;
+    }
+    tbody tr:nth-child(even){ background-color: rgb(189, 189, 189); text-align: center;}
+    tbody tr:nth-child(odd){ background-color: white; text-align: center;}
+    tbody tr:hover{
+        background-color: blanchedalmond;
+    }
+    div div{
+        border: 1px solid rgb(189, 189, 189);
+        margin: 10px;
+        
+    }
+    #details div div{
+        width: 90%;
+    }
+</style>
+<body>
+    <header>
+        <hr>
+        <h1 id="page-title">Web Programming 학습 정리</h1>
+        <br><br>
+        <details>
+            <summary>웹 페이지 소개</summary>
+            2471055 정지민 과제 입니다<br>
+            웹 프로그래밍 시간 배운것을 정리하는 페이지 입니다
+        </details>
+    </header>
+    <br><br><hr>
+    <main>
+        <section id="course-plan">
+            <h2>15주 강의 계획</h2>
+            <table style="margin: auto;">
+                <thead>
+                    <tr style="background-color: lightgreen;" >
+                        <th style="width: 100px;">목차</th>
+                        <th style="width: 200px;">학습주제</th>
+                        <th style="width: 300px;">주요 내용</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>1주차</td>
+                        <td><a href="#week1">웹 개발 기초</a></td>
+                        <td>
+                            <ul>
+                                <li>강의 개요</li>
+                                <li>웹의 구조</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2주차</td>
+                        <td><a href="#week2">HTML기초</a></td>
+                        <td>
+                            <ul>
+                                <li>HTML 기본 구조</li>
+                                <li>텍스트 요소</li>
+                                <li>링크와 이미지</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3주차</td>
+                        <td><a href="#week3">HTML심화</a></td>
+                        <td>
+                            <ul>
+                                <li>폼과 입력 요소</li>
+                                <li>테이블</li>
+                                <li>시맨틱 태그</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4주차</td>
+                        <td><a href="#week4">CSS 기초</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5주차</td>
+                        <td><a href="#week5">CSS 레이아웃</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6주차</td>
+                        <td><a href="#week6">CSS 심화</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7주차</td>
+                        <td><a href="#week7">JavaScript 기초</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8주차</td>
+                        <td><a href="#week8">중간고사</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9주차</td>
+                        <td><a href="#week9">JavaScript DOM</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10주차</td>
+                        <td><a href="#week10">JavaScript 이벤트</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11주차</td>
+                        <td><a href="#week11">AJAX와 API</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12주차</td>
+                        <td><a href="#week12">프레임워크 소개</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>13주차</td>
+                        <td><a href="#week13">반응형 웹 디자인</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14주차</td>
+                        <td><a href="#week14">웹 성능 최적화</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>15주차</td>
+                        <td><a href="#week15">기말고사</a></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br><br>
+        <hr>
+
+        <section id="course-plan">
+            <h2>15주 강의 계획</h2>
+            <br>
+            <div style="display:grid; grid-template-columns: 300px 300px 300px; 
+            padding: 1px; grid-template-rows: 250px 250px 250px 250px 250px; justify-content: center;">
+                <div style="background-color: aliceblue; padding: 10px;">
+                    <strong>1주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week1">웹 개발 기초</a><br>
+                    <br>
+                    <ul>
+                        <li>강의 개요</li>
+                        <li>웹의 구조</li>
+                        <li> VS Code</li>
+                    </ul>
+                </div>
+                <div style="background-color: lavender; padding: 10px;">
+                    <strong>2주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week2">HTML 기초</a><br>
+                    <br>
+                    <ul>
+                        <li> HTML 기본 구조</li>
+                        <li>텍스트 요소</li>
+                        <li>링크와 이미지</li>
+                    </ul>                    
+                </div>
+                <div style="background-color: honeydew; padding: 10px;">
+                    <strong>3주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week3">HTML 심화</a><br>
+                    <br>
+                    <ul>
+                        <li>폼과 입력 요소</li>
+                        <li>테이블</li>
+                        <li>시맨틱 태그</li>
+                    </ul>   
+                    <br>
+                    <br>
+                    
+                </div>
+                <div style="background-color: mistyrose; padding: 10px;">
+                    <strong>4주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week4">CSS 기초</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>CSS 기본 문법</li>
+                        <li>선택자</li>
+                        <li>색상과 배경</li>
+                    </ul>   
+                </div>
+                <div style="background-color: lightyellow; padding: 10px;">
+                    <strong>5주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week5">CSS 레이아웃</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>박스 모델</li>
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                    </ul>  
+                </div>
+                <div style="background-color: beige; padding: 10px;">
+                    <strong>6주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week6">CSS 심화</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>애니메이션</li>
+                        <li>미디어 쿼리</li>
+                        <li>전처리기</li>
+                    </ul> 
+                </div>
+                <div style="background-color: lavenderblush; padding: 10px;">
+                    <strong>7주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week7">JavaScript 기초</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>변수와 자료형</li>
+                        <li>함수</li>
+                        <li>조건문과 반복문</li>
+                    </ul> 
+                </div>
+                <div style="background-color: lightcyan; padding: 10px;">
+                    <strong>8주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week8">중간고사</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>퀴즈: closed-book</li>
+                        <li>실습 문제: open-book</li>
+                    </ul>
+                </div>
+                <div style="background-color: seashell; padding: 10px;">
+                    <strong>9주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week9">JavaScript DOM</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>DOM 개념</li>
+                        <li>요소 선택과 조작</li>
+                        <li>노드 탐색</li>
+                    </ul> 
+                </div>
+                <div style="background-color: mintcream; padding: 10px;">
+                    <strong>10주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week10">JavaScript 이벤트</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>오디오와 비디오</li>
+                        <li>웹워커</li>
+                        <li>웹워커 생성 및 통신</li>
+                    </ul> 
+                </div>
+                <div style="background-color: ivory; padding: 10px;">
+                    <strong>11주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week11">AJAX와 API</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>고급 자바스크립트</li>
+                        <li>함수형 프로그래밍</li>
+                        <li>Debugger</li>
+                    </ul> 
+                </div>
+                <div style="background-color: floralwhite; padding: 10px;">
+                    <strong>12주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week12">프레임워크 소개</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Node.js 소개</li>
+                        <li>Node.js 기본 기능</li>
+                        <li>비동기처리</li>
+                    </ul> 
+                </div>
+                <div style="background-color: lemonchiffon; padding: 10px;">
+                    <strong>13주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week13">반응형 웹 디자인</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Espress.js 소개</li>
+                        <li>Express.js 기본 기능</li>
+                        <li>미들웨어</li>
+                    </ul>
+                </div>
+                <div style="background-color: oldlace; padding: 10px;">
+                    <strong>14주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week14">웹 성능 최적화</a>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Mongo DB와 연동</li>
+                        <li>CRUD API 작성</li>
+                    </ul> 
+                </div>
+                <div style="background-color: lavender; padding: 10px;">
+                    <strong>15주차</strong><br>
+                    <br>
+                    주제:
+                    <a href="#week15">기말고사</a>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="details">
+            <h2>상세 학습 내용</h2>
+            <div style="display: flex; flex-direction: column; align-items: center;  gap: 30px;">
+                <div id="week1" style="background-color: aliceblue; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>1주차:</strong> 웹 개발 기초
+                    <br>
+                    <br>
+                    웹의 기초와 강의 개요에 대해 배운다. Visual Studio Code 를 설치한다
+                </div>
+                <div id="week2" style="background-color: lavender; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>2주차:</strong> HTML 기초
+                    <br>
+                    <br>
+                    HTML의 기초에 대해 복습한다. 
+                </div>
+                <div id="week3" style="background-color: honeydew; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>3주차:</strong> HTML 심화
+                    <br>
+                    <br>
+                    폼과 다양한 입력 요소에 대해 배운다. <br>table을 만드는 방법에 대해 배운다. <br>header body footer로 웹 페이지를 구조화 하는것을 배운다.
+                </div>
+                <div id="week4" style="background-color: mistyrose; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>4주차:</strong> CSS 기초
+                    <br><br>
+                    기본적인 CSS요소(배경 색 등)에 대해 배운다.
+                </div>
+                <div id="week5" style="background-color: lightyellow; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>5주차:</strong> CSS 레이아웃
+                    <br><br>
+                    Flexbox로 영역을 구분한다.<br>
+                    Grid 를 사용하여 정보를 깔끔히 나눈다
+                </div>
+                <div id="week6" style="background-color: beige; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>6주차:</strong> CSS 심화
+                </div>
+                <div id="week7" style="background-color: lavenderblush; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>7주차:</strong> JavaScript 기초
+                </div>
+                <div id="week8" style="background-color: lightcyan; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>8주차:</strong> 중간고사
+                    <br>
+                    <br>
+                    중간고사
+                </div>
+                <div id="week9" style="background-color: seashell; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>9주차:</strong> JavaScript DOM
+                </div>
+                <div id="week10" style="background-color: mintcream; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>10주차:</strong> JavaScript 이벤트
+                </div>
+                <div id="week11" style="background-color: ivory; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>11주차:</strong> AJAX와 API
+                </div>
+                <div id="week12" style="background-color: floralwhite; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>12주차:</strong> 프레임워크 소개
+                </div>
+                <div id="week13" style="background-color: lemonchiffon; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>13주차:</strong> 반응형 웹 디자인
+                </div>
+                <div id="week14" style="background-color: oldlace; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>14주차:</strong> 웹 성능 최적화
+                </div>
+                <div id="week15" style="background-color: lavender; min-height: 150px; padding: 10px; box-sizing: border-box;">
+                    <strong>15주차:</strong> 기말고사
+                    <br><br>
+                    기말고사
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p><small>&copy; 2025 정지민. All rights reserved</small></p>
+    </footer>
+</body>
+</html>

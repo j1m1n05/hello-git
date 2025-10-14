@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-8</title>
+    <script>
+        let win = null;
+        function showHTML() {
+            if(win ==null||win.closed){
+                win = window.open("", "outWin", "width=300, height=200");
+                let textArea = document.getElementById('srcText');
+                win.document.open();
+                win.document.writeln(textArea.value);
+                win.document.close();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>HTML 문서 작성기 만들기</h3>
+    <hr>
+    <p>
+        문서 작성후 버튼 <br>
+        새 윈도우에 문서가 출력
+    </p>
+    <textarea name="" id="srcText" rows="10" cols="50"></textarea>
+    <br><br>
+    <button onclick="showHTML();">HTML 문서 출력하기</button>
+    <input type="button" name="" value="HTML 문서 출력하기">
+</body>
+</html>
